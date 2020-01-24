@@ -1,1 +1,36 @@
 // Navigation Styles here
+.navigations{
+    border-bottom: 2px dashed silver;
+    .dash{
+        max-width: 800px;
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;  
+    @media @mobile{
+        .column();
+    }
+    h1{
+        @media @mobile{
+            font-size:3rem;
+        }        
+    }
+    nav{
+        justify-content: space-evenly;
+        display: flex;
+        width: 40%;
+        @media @mobile{
+            .fullwidth(100%);
+          }
+      
+        a{
+            text-decoration: none;
+            color:black;
+            font-size: 1.3rem;
+
+        }
+    }
+    }
+}
