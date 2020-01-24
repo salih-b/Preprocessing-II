@@ -1,1 +1,21 @@
 // Mixins in here
+.signup(@backcolor){
+    color: white;
+    background-color: @backcolor;
+    border-radius: 15px;
+    height: 40px;
+    font-size: 2.0rem;
+}
+.flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+@mobile: ~"(max-width: 500px)";
+.column(){
+    flex-direction: column;
+}
+.fullwidth(@width){
+    width:@width;
+}
+
